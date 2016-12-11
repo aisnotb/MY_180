@@ -1,0 +1,96 @@
+.box{
+	width:100px;
+	height: 100px;
+	position: relative;
+	top: 20px;
+	float: left;
+	display: block;
+}
+
+
+.one{
+	background-color:red;
+}
+
+.two{
+	background-color:green;
+}
+.three{
+	background-color:yellow;
+}
+.four{
+	background-color:blue;
+}
+
+.four:hover{
+	background-color:blue;
+	animation-name: moveInCircle;
+	animation-duration: 4s;
+	-webkit-animation-name: moveInCircle;
+	-webkit-animation-duration: 4s;
+}
+
+.five{
+	background-color: #ffee12;
+
+}
+
+.six{
+	background-color: #eeabcd;
+}
+
+.seven{
+	background-color: #1efdda;
+}
+
+.eight{
+	background-color: #FF1111;
+}
+
+.nine{
+	background-color: #D0FF83;
+}
+
+.ten{
+	background-color: #BDA7FF;
+}
+
+/*@keyframes moveInCircle{
+	0%   {top: 0px;}
+	12.5%  {top:100px }
+	25%  {right: 100px;}
+	37.5%  {bottom:100px;}
+	50% {left:-100px}
+	62.5% {top:-100px;}
+	75%	 {left:100px;}
+	87.5%	{top:-100px;}
+	100% {top: 0px;}
+}
+*/
+
+@-webkit-keyframes moveInCircle{
+	0%   {top: 0px;}
+	12.5%  {top:100px }
+	25%  {left: 100px;}
+	37.5%  {top:200px;}
+	50% {left:0px}
+	62.5% {top:100px;}
+	100%	 {top:0px;}
+/*	87.5%	{top:-100px;}
+*/	/*100% {top: 0px;}*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -55,18 +55,15 @@
 	background-color: #BDA7FF;
 }
 
-/*@keyframes moveInCircle{
+@keyframes moveInCircle{
 	0%   {top: 0px;}
 	12.5%  {top:100px }
-	25%  {right: 100px;}
-	37.5%  {bottom:100px;}
-	50% {left:-100px}
-	62.5% {top:-100px;}
-	75%	 {left:100px;}
-	87.5%	{top:-100px;}
-	100% {top: 0px;}
+	25%  {left: 100px;}
+	37.5%  {top:200px;}
+	50% {left:0px}
+	62.5% {top:100px;}
+	100%	 {top:0px;}
 }
-*/
 
 @-webkit-keyframes moveInCircle{
 	0%   {top: 0px;}
@@ -78,6 +75,16 @@
 	100%	 {top:0px;}
 /*	87.5%	{top:-100px;}
 */	/*100% {top: 0px;}*/
+}
+
+@-moz-keyframes moveInCircle{
+	0%   {top: 0px;}
+	12.5%  {top:100px }
+	25%  {left: 100px;}
+	37.5%  {top:200px;}
+	50% {left:0px}
+	62.5% {top:100px;}
+	100%	 {top:0px;}
 }
 
 

@@ -1,0 +1,71 @@
+.player{
+	color: red;
+	font-size: 24px;
+}
+#computer{
+	width: 500px;
+	float:left;
+	margin-right: 20px;
+	margin-left: 20px;
+	text-align: center;
+}
+
+#you{
+	width:500px;
+	float:left;
+	margin-right: 20px;
+	margin-left: 20px;
+	text-align: center;
+}
+
+
+div#left-fist{
+	float:left;
+	width: 330px;
+	margin-top: 100px;
+	margin-right: 20px;
+	/*border: 1px solid red;*/
+}
+
+div#result{
+	width: 330px;
+	margin-top:100px;
+	margin-right: 20px;
+	float:left;
+	height: 200px;
+	text-align: center;
+	/*border: 1px solid green;*/
+}
+
+
+div#right-fist{
+	width: 330px;
+	margin-top: 100px;
+	margin-right: 20px;
+	/*border: 1px solid red;*/
+	float:left;
+}
+
+.buttons{
+	background-color: #9B77FF;
+	display: block;
+}
+
+#showResult{
+	color: green;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

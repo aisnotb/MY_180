@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>paper scissors</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -21,7 +22,7 @@
 		
 	<div>
 		<div id="left-fist"> <!-- computer container -->
-			<img alt="left-fist" src="images/left_fist.png">
+			<img alt="left-fist" class="animateImages" src="images/left_fist.png">
 			<img alt="paper" src="images/paper.png" style="display: none">
 			<img alt="scissors" src="images/scissors.png" style="display: none">
 		</div>
@@ -30,7 +31,7 @@
 			<div id="showResult">TIE</div>
 		</div>
 		<div id="right-fist"> <!-- player container -->
-			<img alt="right-fist" src="images/right_fist.png">
+			<img alt="right-fist" class="animateImages" src="images/right_fist.png">
 			<img alt="paper" src="images/paper.png" style="display: none">
 			<img alt="scissors" src="images/scissors.png" style="display: none">
 		</div>		
@@ -39,9 +40,9 @@
 	</div>
 
 	<div id="butttonsContainer">
-		<button>rock</button>
-		<button>paper</button>
-		<button>siccsor</button>
+		<button class="button">rock</button>
+		<button class="button">paper</button>
+		<button class="button">siccsor</button>
 	</div>
 
 
@@ -51,5 +52,6 @@
 			<a href="#">About</a>
 		</div>
 	</footer>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

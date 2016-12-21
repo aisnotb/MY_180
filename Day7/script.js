@@ -56,16 +56,26 @@ $(document).ready(function(){
 			}
 		}
 
-		if(selecte[0] == 4){
-			for(var i = 1; i <=9&&i!=5; i+=2){
-				var dots = "#dot-" + i;
-				$(dots).show();
+		if(selecte[0]==4){
+			for(var i = 1; i<=9; i+=2){
+				if(i==5){
+
+				}else{
+					var dots = "#dot-" + i;
+					console.log("this number is " + i);
+					$(dots).show();
+				}
 			}
 		}
 		if(selecte[1] == 4){
-			for(var i = 11; i <=19&&i!=15; i+=2){
-				var dots = "#dot-" + i;
-				$(dots).show();
+			for(var i = 11; i!=15&& i<=19; i+=2){
+				if(i==15){
+
+				}else{
+					var dots = "#dot-" + i;
+					console.log("this number is " + i);
+					$(dots).show();
+				}
 			}
 		}
 

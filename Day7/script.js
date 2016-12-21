@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	$("button").on('click', function(){
 		showDice();
+		pressBtn();
 	});
 
 	function reset(){
@@ -8,13 +9,24 @@ $(document).ready(function(){
 	}
 
 	function generateRandom(){
-		//get a number between 1 - 19
 		var rdm= [];
 		var rdm1 = Math.floor(Math.random()*6+1);
 		var rdm2 = Math.floor(Math.random()*6+1);
 		rdm.push(rdm1);
 		rdm.push(rdm2);
 		return rdm;
+	}
+
+	function pressBtn(){
+		$("button").on("mousedown", function(){
+			$(this).removeClass("btn_up");
+			$(this).addClass("btn_down");
+		});
+
+		$("button").on("mouseup", function(){
+			$(this).removeClass("btn_down");
+			$(this).addClass("btn_up");
+		});
 	}
 
 	function showDice(){
@@ -68,7 +80,7 @@ $(document).ready(function(){
 			}
 		}
 		if(selecte[1] == 4){
-			for(var i = 11; i!=15&& i<=19; i+=2){
+			for(var i = 11; i<=19; i+=2){
 				if(i==15){
 
 				}else{

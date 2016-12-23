@@ -20,8 +20,20 @@ $(document).ready(function() {
 	    "I can't believe you are that disgusting."
 	];
 
+	// $(input[type="text"]).on()
+
 	$("#inputbox").on("submit", function(event) {
 	    console.log("dfsdfdsfsd");
+	    var modifiedText = $("input[type=text]").val().replace(/^\s+|\s+$/g, '');
+	    alert(modifiedText);
+
+	    if(modifiedText == ''){
+	    	$("#title").text(" You didnt type any thing!");
+	    }else{
+	    	$("#title").text("What the hell?");
+	    	var random = Math.floor(Math.random()*18);
+	    	$("#title").append(advices[random]);
+		}
 	    event.preventDefault();
 	});
 
